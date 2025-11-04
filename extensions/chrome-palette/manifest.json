@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt Palette",
+  "version": "0.1.0",
+  "description": "Search and copy team prompts anywhere.",
+  "permissions": ["activeTab", "scripting", "clipboardWrite"],
+  "host_permissions": [
+    "http://localhost:3000/*",
+    "https://localhost:3000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Open Prompt Palette"
+  },
+  "commands": {
+    "open-palette": {
+      "suggested_key": { "default": "Ctrl+Shift+K", "mac": "Command+Shift+K" },
+      "description": "Open Prompt Palette"
+    }
+  },
+  "background": { "service_worker": "worker.js" }
+}
+
+

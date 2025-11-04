@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prompt Palette</title>
+    <style>
+      body { font: 14px/1.4 system-ui, -apple-system; margin: 0; width: 520px; }
+      .search { width: 100%; box-sizing: border-box; padding: 10px; border: 0; border-bottom: 1px solid #eee; }
+      .item { padding: 10px; border-bottom: 1px solid #f0f0f0; cursor: pointer; }
+      .item:hover { background: #f7f7f7; }
+      .title { font-weight: 600; }
+      .desc { color: #666; font-size: 12px; }
+      .footer { color: #888; font-size: 12px; padding: 8px 10px; display: flex; gap: 12px; }
+      .hint { padding: 10px; color: #666; }
+    </style>
+  </head>
+  <body>
+    <input id="q" class="search" placeholder="Search prompts..." autofocus />
+    <div id="list"></div>
+    <div class="footer">
+      <span>Enter: Copy</span><span>Shift+Enter: Paste</span>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+  </html>
+
+
